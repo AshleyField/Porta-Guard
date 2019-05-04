@@ -1,0 +1,14 @@
+.text-area {
+	&-heading {
+		h2 {
+			font-size: 1.7em;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+
+	&-body {
+		text-align: center;
+	}
+}

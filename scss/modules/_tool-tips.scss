@@ -1,0 +1,51 @@
+.info-area {
+	.tool-tips {
+		.tool-tip {
+			display: flex;
+			text-align: center;
+			border-radius: 5px;
+ 			box-shadow: 0 3px 10px rgba(0,0,0,0.39);
+ 			margin: 2em 0;
+ 			transition: .5s box-shadow ease, .5s transform ease;
+
+ 			&:hover {
+ 				box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+ 				transform: translateY(-2px);
+ 			}
+
+			&-icon {
+				flex: 1 0 20%;
+				box-sizing: border-box;
+				border-right: 1px rgba(0,0,0,0.2) solid;
+				padding: .9em 1em;
+
+				i {
+					color: $main-color;
+					font-size: 1.75em;
+				}
+			}
+
+			&-text {
+				flex: 1 0 60%;
+				padding: .9em 1em;
+
+				p {
+					font-size: .9em;
+					text-align: left;
+					color: #3C3D3D;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.info-image {
+		width: 100%;
+		background-image: url("assets/still-transparent-1.jpg");
+		background-position: 70% 50%;
+		display: block;
+		height: 10em;
+		background-size: 750px 151.56250px;
+		background-repeat: no-repeat;
+	}
+}

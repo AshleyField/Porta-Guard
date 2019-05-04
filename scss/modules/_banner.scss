@@ -1,0 +1,106 @@
+ .banner {
+ 	background-image: url("assets/banner-image-1.jpg");
+ 	background-position: center;
+ 	background-size: cover;
+ 	height: 20em;
+ 	display: flex;
+
+ 	&-content {
+ 		align-self: center;
+ 		margin: 0 auto;
+ 		.banner-heading {
+ 			width: 13em;
+ 			text-align: center;
+ 			margin: 0 auto;
+ 			h1 {
+ 				color: #fff;
+ 				text-shadow: 0 3px 10px rgba(0,0,0,0.76);
+ 				font-size: 3em;
+ 				margin-bottom: .25em;
+ 				margin-top: 0;
+ 			}
+ 		}
+
+ 		.banner-button-wrapper {
+ 			background-color: #FECC08;
+ 			background-image: linear-gradient(#FECC08, #FCB514);
+ 			border-radius: 5px;
+ 			box-shadow: 0 3px 10px rgba(0,0,0,0.76);
+ 			display: flex;
+ 			width: 17em;
+ 			position: relative;
+ 			z-index: 10;
+ 			transition: .5s box-shadow ease, .5s transform ease;
+
+ 			&:before {
+ 				border-radius: inherit;
+			    background-image: linear-gradient(#FECC08, #FF9D00);
+			    content: '';    
+			    display: block;
+			    height: 100%;
+			    position: absolute;
+			    top: 0; left: 0;
+			    opacity: 0;
+			    width: 100%;
+			    z-index: -100;
+			    transition: opacity 0.45s;
+ 			}
+
+ 			&:hover {
+ 				box-shadow: 0 3px 10px rgba(0,0,0,0.9);
+ 				transform: translateY(-2px);
+			    &:before {
+			      opacity: 1;
+			    }
+			  }
+
+ 			.banner-button-left {
+ 				flex: 1 0 60%;
+ 			}
+
+ 			.banner-button-right {
+ 				flex: 1 0 20%;
+ 				border-left: 1px rgba(0,0,0,0.2) solid;
+ 			}
+
+ 			.banner-button {
+				text-align: center;
+				box-sizing: border-box;
+
+				a {
+					color: #fff;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: 1.25em;
+					display: block;
+					padding: .65em 1em;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+ 		}
+
+ 		.banner-email {
+ 			text-align: center;
+ 			margin-top: 1em;
+ 			span {
+ 				color: #fff;
+ 				text-shadow: 0 3px 10px rgba(0,0,0,0.76);
+
+ 				a {
+ 					color: #fff;
+ 					text-shadow: 0 3px 10px rgba(0,0,0,0.76);
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+
+ .banner-bottom-angle {
+	background-image: linear-gradient(-181.5deg, $main-color 40%, #fff 42%);
+	width: 100%;
+	height: 1em;
+	display: block;
+}

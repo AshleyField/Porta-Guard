@@ -1,0 +1,32 @@
+{
+  "name": "gulpdemo",
+  "version": "1.0.0",
+  "description": "To demo gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.1.3",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-minifier": "^1.2.2",
+    "gulp-replace-name": "^1.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "mapbox-gl": "^0.48.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshleyField/Visit-Auckland.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AshleyField/Visit-Auckland/issues"
+  },
+  "homepage": "https://github.com/AshleyField/Visit-Auckland#readme"
+}

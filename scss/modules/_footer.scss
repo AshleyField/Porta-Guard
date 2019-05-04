@@ -1,0 +1,25 @@
+footer {
+	background-color: #000;
+	border-top: 4px $main-color solid;
+	color: #fff;
+	text-align: center;
+	padding: 2em 1em;
+
+	.footer-left {
+		margin-bottom: 3em;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	.signature {
+		color: #7D7F81;
+		transition: .5s ease color;
+		text-decoration: none;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
