@@ -42,10 +42,10 @@
 	.info-image {
 		width: 100%;
 		background-image: url("assets/still-transparent-1.jpg");
-		background-position: 70% 50%;
 		display: block;
 		height: 10em;
-		background-size: 750px 151.56250px;
+		background-size: cover;
+		background-position: 95% 50%;
 		background-repeat: no-repeat;
 	}
 }

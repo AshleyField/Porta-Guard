@@ -318,7 +318,8 @@ template {
 
 .header .logo-container {
   width: 75%;
-  margin: 1em auto; }
+  margin: 1em auto;
+  max-width: 25em; }
   .header .logo-container img {
     width: 100%;
     display: block; }
@@ -333,13 +334,14 @@ template {
     align-self: center;
     margin: 0 auto; }
     .banner-content .banner-heading {
-      width: 13em;
+      width: 14em;
       text-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-bottom: 1em; }
       .banner-content .banner-heading h1 {
         color: #fff;
         text-shadow: 0 3px 10px rgba(0, 0, 0, 0.76);
-        font-size: 3em;
+        font-size: 2.5em;
         margin-bottom: .25em;
         margin-top: 0; }
     .banner-content .banner-button-wrapper {
@@ -403,6 +405,25 @@ template {
   height: 1em;
   display: block; }
 
+@media only screen and (min-width: 40em) {
+  .banner {
+    height: 25em; }
+    .banner-content {
+      align-self: center;
+      margin: 0 2em; }
+      .banner-content .banner-heading {
+        width: 35em;
+        text-align: left;
+        margin: 1em 0; }
+        .banner-content .banner-heading h1 {
+          font-size: 3em; }
+      .banner-content .banner-email {
+        text-align: left; } }
+
+@media only screen and (min-width: 60em) {
+  .banner {
+    height: 30em; } }
+
 .text-area-heading h2 {
   font-size: 1.7em;
   font-weight: 700;
@@ -442,10 +463,10 @@ template {
 .info-area .info-image {
   width: 100%;
   background-image: url("assets/still-transparent-1.jpg");
-  background-position: 70% 50%;
   display: block;
   height: 10em;
-  background-size: 750px 151.56250px;
+  background-size: cover;
+  background-position: 95% 50%;
   background-repeat: no-repeat; }
 
 footer {

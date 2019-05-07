@@ -2,10 +2,20 @@
 	.logo-container {
 		width: 75%;
 		margin: 1em auto;
+		max-width: 25em;
 
 		img {
 			width: 100%;
 			display: block;
 		}
 	}
+}
+
+@media only screen and (min-width : 40em) {
+}
+
+@media only screen and (min-width : 60em) {
+}
+
+@media only screen and (min-width : 80em) {
 }
