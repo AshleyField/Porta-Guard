@@ -5,8 +5,9 @@
 			text-align: center;
 			border-radius: 5px;
  			box-shadow: 0 3px 10px rgba(0,0,0,0.39);
- 			margin: 2em 0;
+ 			margin: 2em auto;
  			transition: .5s box-shadow ease, .5s transform ease;
+ 			max-width: 25em;
 
  			&:hover {
  				box-shadow: 0 3px 10px rgba(0,0,0,0.6);
@@ -48,4 +49,53 @@
 		background-position: 95% 50%;
 		background-repeat: no-repeat;
 	}
+}
+
+@media only screen and (min-width : 40em) {
+	.info-area {
+		.info-image {
+			height: 15em;
+			background-position: center;
+			background-size: contain;
+		}
+	}
+}
+
+@media only screen and (min-width : 60em) {
+	.info-area {
+
+		.tool-tips {
+			background-image: url("assets/still-transparent-1.jpg");
+			width: 100%;
+			display: flex;
+			background-position: center;
+			background-size: 800px 200.99496px;
+			background-repeat: no-repeat;
+			height: 20em;
+			max-width: 75%;
+			margin: 5em auto;
+
+			.tool-tip {
+				height: 4em;
+				background-color: #fff;
+
+				&:nth-child(2) {
+					align-self: flex-end;
+				}
+			}
+
+			.aos-animate {
+				&:nth-child(2) {
+					transform: translateY(2em);
+				}
+			}
+		}
+
+		.info-image {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (min-width : 80em) {
 }

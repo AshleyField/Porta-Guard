@@ -5,21 +5,49 @@ footer {
 	text-align: center;
 	padding: 2em 1em;
 
-	.footer-left {
-		margin-bottom: 3em;
-	}
+	.footer-wrapper {
 
-	a {
-		color: #fff;
-	}
+		.footer-left {
+			margin-bottom: 3em;
+		}
 
-	.signature {
-		color: #7D7F81;
-		transition: .5s ease color;
-		text-decoration: none;
-
-		&:hover {
+		a {
 			color: #fff;
+		}
+
+		.signature {
+			color: #7D7F81;
+			transition: .5s ease color;
+			text-decoration: none;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 60em) {
+	footer {
+		padding: .5em 0;
+		.footer-wrapper {
+			display: flex;
+			max-width: 75%;
+			margin: 0 auto;
+
+			.footer-left {
+				flex: 1 0 50%;
+				text-align: left;
+				margin: 0;
+				align-self: center;
+
+			}
+
+			.footer-right {
+				flex: 1 0 50%;
+				text-align: right;
+				align-self: center;
+			}
 		}
 	}
 }

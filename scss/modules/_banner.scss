@@ -134,6 +134,35 @@
 @media only screen and (min-width : 60em) {
 	.banner {
 		height: 30em;
+
+		&-content {
+			margin: 0 auto;
+			min-width: 75%;
+
+			.banner-heading {
+
+				h1 {
+					font-size: 3.5em;
+				}
+			}
+
+			.banner-button-wrapper {
+				width: 20em;
+
+				.banner-button {
+					
+					a {
+						font-size: 1.4em;
+					}
+				}
+			}
+
+			.banner-email {
+				span {
+					font-size: 1.25em;
+				}
+			}
+		}
 	}
 }
 

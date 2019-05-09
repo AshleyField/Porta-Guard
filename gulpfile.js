@@ -5,10 +5,18 @@ var sass = require('gulp-sass');
 var minify = require('gulp-minifier');
 var replaceName = require('gulp-replace-name');
 var browserSync = require('browser-sync').create();
+var sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
   return gulp.src('./scss/**/*.scss')
+  .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+  }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(''));
 });
 
@@ -30,6 +38,15 @@ gulp.task('replaceNameJS', function() {
     .pipe(replaceName(/\.js/g, '.min.js'))
     .pipe(gulp.dest('./minified'));
 });
+
+gulp.task('default', () =>
+    gulp.src('src/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'))
+);
  
  // OLD VERSION
 gulp.task('sass:watch', function () {
